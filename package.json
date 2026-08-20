@@ -1,0 +1,10 @@
+{
+  "name": "kwizerana-local-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kwizerana Sovereign AI — marketing site (static, zero-build).",
+  "scripts": {
+    "dev": "npx --yes serve . -l 3000",
+    "start": "npx --yes serve . -l 3000"
+  }
+}
