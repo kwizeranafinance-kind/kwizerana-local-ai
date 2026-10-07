@@ -1,0 +1,21 @@
+/* Navigation between the existing Sovereign site and Concierge. */
+html{scroll-padding-top:132px;}
+.skip-link{position:fixed;top:8px;left:12px;z-index:100;padding:12px 18px;background:var(--egg);color:var(--bg);transform:translateY(-180%);}
+.skip-link:focus{transform:translateY(0);}
+a:focus-visible,summary:focus-visible,button:focus-visible{outline:3px solid var(--purple);outline-offset:5px;}
+nav .row{height:auto;min-height:70px;gap:18px;padding-block:16px;flex-wrap:wrap;}
+nav .links{flex-wrap:wrap;gap:12px 22px;}
+nav .links a{display:inline-flex;align-items:center;min-height:44px;}
+nav .links a[aria-current="page"]{color:var(--purple);font-weight:700;}
+nav .cta,.btn-orange{background:var(--orange-deep);color:var(--bg);}
+nav .cta:hover,.btn-orange:hover{background:var(--purple-deep);}
+.footer-links{display:flex;gap:14px 24px;flex-wrap:wrap;}
+footer a{color:var(--lav);}
+footer .note{color:var(--lav);}
+.service-bridge{max-width:860px;margin:32px auto 0;padding-top:28px;border-top:1px solid var(--line-2);}
+.service-bridge h3{font-size:23px;margin:12px 0;}
+.service-bridge p{max-width:65ch;color:var(--muted);margin-bottom:22px;}
+.service-bridge .eyebrow{font-size:10px;}
+@media(max-width:820px){nav .links a:not(.cta){display:inline-flex;}nav .row{gap:8px;}nav .links{width:100%;gap:4px 18px;font-size:13px;}nav .cta{padding:8px 12px;}nav .logo{height:26px;}html{scroll-padding-top:166px;}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto;}}
+@media(max-width:480px){html{scroll-padding-top:224px;}}
